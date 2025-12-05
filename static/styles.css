@@ -1,0 +1,7 @@
+
+body { background:#f4f7fb; }
+.top-bar { background: linear-gradient(90deg,#284b63,#3c6e71); color:white; padding:1rem 0; }
+.brand { font-size:1.6rem; font-weight:bold; }
+.main-nav a { color:#d9d9d9; text-decoration:none; font-weight:500; }
+.main-nav a:hover { color:white; }
+.footer { background:#e0e4e7; }

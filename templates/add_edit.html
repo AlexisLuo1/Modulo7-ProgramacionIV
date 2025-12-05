@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}{{ action }} libro{% endblock %}
+{% block content %}
+<h2>{{ action }} libro</h2>
+
+<form method="post" class="mt-3">
+  <div class="mb-3">
+    <label class="form-label">Título</label>
+    <input name="titulo" class="form-control" value="{{ book.titulo if book else '' }}">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Autor</label>
+    <input name="autor" class="form-control" value="{{ book.autor if book else '' }}">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Género</label>
+    <input name="genero" class="form-control" value="{{ book.genero if book else '' }}">
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label">Estado</label>
+    <input name="estado" class="form-control" value="{{ book.estado if book else '' }}">
+  </div>
+
+  <button class="btn btn-success">{{ action }}</button>
+  <a href="{{ url_for('index') }}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}
